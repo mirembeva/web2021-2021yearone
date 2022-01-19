@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="">
+        <!-- text area -->
+        <textarea name="" id="" cols="30" rows="10">
+            leave a comment or message
+        </textarea>
+
+        <!-- file -->
+        <!-- Textbox -->
+        <h1>Fill this form to register.</h1>
+        <label>First Name</label>
+        <input type="text" name="Firstname" required minlength="6"><br><br>
+        <label>Last Name</label>
+        <input type="text" name="Laststname" size="50"><br>
+        
+        <!-- radio button -->
+        <h4>Choose your gender</h4>
+        <label>Female</label>
+        <input type="radio" name="Sex" value="female">
+        <label>Male</label>
+        <input type="radio" name="Sex" value="male">
+        <h4>Which subjects have you attended</h4>
+      
+        <input type="checkbox" name="C++" value="yes">
+        <label>c++</label><br>
+        
+        <input type="checkbox" name="ethics" value="yes">
+        <label>Ethics</label><br>
+        <input type="checkbox" name="introduction to it" value="yes">
+        <label>Introduction to IT</label><br>
+        <input type="checkbox" name="PhP" value="yes">
+        <label>PhP</label>
+        
+        <h4>How many siblings are you</h4>
+        <input type="number" name="noOfSiblings" min="1" step="5"><br><br>
+
+        <!-- dropdown menu -->
+        <h4>Select your course</h4>
+        <select name="course">
+            <option value="IT">BSc IT</option>
+            <option value="CS">BSc CS</option>
+            <option value="Educ">BSc Educ</option>
+            <option value="Gen" >BSc Gen</option>
+            <option value="choose" selected>Choose...</option>
+
+        </select><br><br>
+
+        <!-- password -->
+        <label>Password</label>
+        <input type="password" name="userpass" minlength="6"><br>
+
+        <!-- color -->
+        <label>color</label>
+        <input type="color" name="userpass"><br><br>
+        <input type="file" name="passphoto"><br><br>
+
+        <input type="submit" value="send">
+        <input type="reset" value="cancel">
+
+
+    </form>
+</body>
+</html>

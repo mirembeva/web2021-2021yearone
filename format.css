@@ -1,0 +1,43 @@
+
+  /* https://www.w3schools.com/css/css_link.asp  */
+   
+   
+   h2{
+        color: red; 
+        border: 2px solid blue;
+    }
+    .name{
+        font-size: 25px;
+        text-decoration: underline;
+        text-decoration-color: red;
+        color: blue;
+    }
+#proficpic{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+.cards{
+    width: 200px;
+    height: 350px;
+    border-radius: 50px;
+    border: 20px solid red;
+}
+
+.links{
+    text-decoration: none;
+    padding-right: 20px;
+    color: red;
+}
+
+.links:hover{
+background-color: black;
+color: white;
+
+}
+
+a:visited{
+    color: yellow;
+}
