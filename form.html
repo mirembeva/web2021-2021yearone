@@ -4,68 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>user form</title>
+    <link rel="stylesheet" href="./format.css">
 </head>
 <body>
+    
     <form action="">
-        <!-- text area -->
-        <textarea name="" id="" cols="30" rows="10">
-            leave a comment or message
-        </textarea>
-
-        <!-- file -->
-        <!-- Textbox -->
-        <h1>Fill this form to register.</h1>
-        <label>First Name</label>
-        <input type="text" name="Firstname" required minlength="6"><br><br>
-        <label>Last Name</label>
-        <input type="text" name="Laststname" size="50"><br>
-        
-        <!-- radio button -->
-        <h4>Choose your gender</h4>
+        <h3>Fill in your details</h3>
+        <label>Surname</label><input type="text" name="surname" required><br><br>
+        <label>Password</label><input type="password" name="userpassword">
+        <label>Year of Study</label><input type="number" name="year of study" min="1" max="5" step="2">
+        <br><label>Date of birth</label><input type="date" name="DOB"><br>
+        <label>S.6 UACE</label><input type="file" name="UACE"><br><br>
         <label>Female</label>
-        <input type="radio" name="Sex" value="female">
+        <input type="radio" name="gender" value="female">
         <label>Male</label>
-        <input type="radio" name="Sex" value="male">
-        <h4>Which subjects have you attended</h4>
-      
-        <input type="checkbox" name="C++" value="yes">
-        <label>c++</label><br>
-        
-        <input type="checkbox" name="ethics" value="yes">
-        <label>Ethics</label><br>
-        <input type="checkbox" name="introduction to it" value="yes">
-        <label>Introduction to IT</label><br>
-        <input type="checkbox" name="PhP" value="yes">
-        <label>PhP</label>
-        
-        <h4>How many siblings are you</h4>
-        <input type="number" name="noOfSiblings" min="1" step="5"><br><br>
-
-        <!-- dropdown menu -->
-        <h4>Select your course</h4>
+        <input type="radio" name="gender" value="male"><br><br>
+        <input type="checkbox" name="Matooke" value="yes"><label>Matooke</label><br>
+        <input type="checkbox" name="Meat" value="yes"><label>Meat</label><br>
+        <input type="checkbox" name="Maize" value="yes"><label>Maize</label><br>
         <select name="course">
-            <option value="IT">BSc IT</option>
-            <option value="CS">BSc CS</option>
-            <option value="Educ">BSc Educ</option>
-            <option value="Gen" >BSc Gen</option>
-            <option value="choose" selected>Choose...</option>
+            <option value="BSCIT">Bachelor of IT</option>
+            <option value="BSCs">Bachelor of cs</option>
+            <option value="BSEDuc" selected>Bachelor of educ</option>
+            </select><br><br>
+            <textarea cols="30" rows="10">
+                write a comment
+            </textarea><br><br>
+        <input type="submit" value="SEND">
+        <input type="reset" value="CANCEL">
+        <p>this is it        </p>
+        
+    </form>     
 
-        </select><br><br>
-
-        <!-- password -->
-        <label>Password</label>
-        <input type="password" name="userpass" minlength="6"><br>
-
-        <!-- color -->
-        <label>color</label>
-        <input type="color" name="userpass"><br><br>
-        <input type="file" name="passphoto"><br><br>
-
-        <input type="submit" value="send">
-        <input type="reset" value="cancel">
-
-
-    </form>
+        
+    
 </body>
 </html>
